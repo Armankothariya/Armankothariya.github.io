@@ -1,8 +1,3 @@
-You're right — I missed the prosthetic dimension of your BCI work. I've updated the **Volume 01** project description
-and feature list to include **prosthetic control** alongside music synthesis, while keeping everything else exactly the
-same. The content now accurately reflects your work.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +10,7 @@ same. The content now accurately reflects your work.
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Orbitron:wght@400;700;900&family=Inter:wght@100;200;300;400;700;800;900&family=Space+Mono:wght@400&family=Syncopate:wght@400;700&family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Orbitron:wght@400;700;900&family=Inter:wght@100;200;300;400;700;800;900&family=Space+Mono:wght@400&family=Syncopate:wght@400;700&family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;700&family=Bebas+Neue:wght@400&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -31,6 +26,7 @@ same. The content now accurately reflects your work.
     <div class="nav-brand">OBSIDIAN SILENCE</div>
     <ul class="nav-links">
       <li><a href="#hero" id="nav-hero">HERO</a></li>
+      <li><a href="#about" id="nav-about">ABOUT</a></li>
       <li><a href="#system" id="nav-system">SYSTEM</a></li>
       <li><a href="#architecture" id="nav-architecture">ARCHITECTURE</a></li>
       <li><a href="#archive" id="nav-archive">ARCHIVE</a></li>
@@ -41,6 +37,11 @@ same. The content now accurately reflects your work.
 
   <!-- HERO -->
   <section id="hero" class="section section--hero">
+    <!-- CV Download Button -->
+    <a href="./assets/projects/Arman_Resume.pdf" download class="cv-btn hero-cv-btn">
+      Download CV
+    </a>
+    
     <!-- Atmospheric Aura -->
     <div class="hero-aura" aria-hidden="true"></div>
     <!-- Digital Horizon Line -->
@@ -80,7 +81,23 @@ same. The content now accurately reflects your work.
       </div>
     </div>
     <img src="silhouette.png" alt="" aria-hidden="true" class="hero-silhouette" id="hero-silhouette" />
+    
+    <!-- Signature -->
+    <img src="./assets/projects/sign.png" alt="Signature" class="hero-signature" />
   </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section--about">
+    <div class="container container--narrow-about reveal-group">
+      <span class="about-label">ABOUT</span>
+      <p class="about-text">
+        I’m Arman, a B.Tech IT student working at the intersection of artificial intelligence and brain-computer
+        interfaces. I build systems that translate human signals into real-world interaction, focusing on practical
+        applications like emotion-based control and assistive technologies.
+      </p>
+    </div>
+  </section>
+
 
   <!-- SYSTEM -->
   <section id="system" class="section section--system">
@@ -209,71 +226,138 @@ same. The content now accurately reflects your work.
 
       <div class="vol-grid">
 
-        <!-- Volume 01 - Updated with prosthetic control -->
+        <!-- Volume 01 -->
         <article class="vol-card" id="vol-01">
+          <div class="vol-preview">
+            <img src="assets/projects/bci_preview.png" alt="BCI System Visualization" />
+          </div>
           <div class="vol-card-inner">
             <div class="vol-head">
               <span class="vol-num">VOLUME 01</span>
               <div class="vol-tags">
                 <span class="vol-tag">BCI</span>
                 <span class="vol-tag">EEG</span>
-                <span class="vol-tag">PROSTHETICS</span>
+                <span class="vol-tag">NEUROTECH</span>
               </div>
             </div>
             <h3 class="vol-title">Emotion-Aware BCI System</h3>
-            <p class="vol-desc">A brain-computer interface system that decodes emotional states from EEG signals and
-              translates them into dual outputs: real-time prosthetic control and adaptive music synthesis. Bridging
-              neuroscience, assistive technology, and human expression.</p>
-            <ul class="vol-features">
-              <li class="vol-feature">
-                <span class="vol-feature-label">MODULE</span>
-                <span class="vol-feature-name">EEG Emotion Classification</span>
-              </li>
-              <li class="vol-feature">
-                <span class="vol-feature-label">MODULE</span>
-                <span class="vol-feature-name">Music Control Interface</span>
-              </li>
-              <li class="vol-feature">
-                <span class="vol-feature-label">MODULE</span>
-                <span class="vol-feature-name">Prosthetic Arm Control System</span>
-              </li>
-            </ul>
+
+            <div class="vol-desc-group">
+              <div class="vol-desc-item">
+                <span class="vol-desc-label">Description</span>
+                <p class="vol-desc-text">An EEG-based brain-computer interface that classifies emotional states using machine learning models and maps them into real-time outputs such as music control.
+
+Currently working on extending the system for prosthetic arm interaction using hardware integration.</p>
+              </div>
+              <div class="vol-desc-item">
+                <span class="vol-desc-label">Technologies</span>
+                <p class="vol-desc-text">Python, OpenBCI, MNE, SVM, Random Forest, KNN</p>
+              </div>
+              <div class="vol-desc-item">
+                <span class="vol-desc-label">Work Done</span>
+                <p class="vol-desc-text">- Processed EEG signals for emotion classification
+- Implemented ML models for prediction
+- Built a basic real-time response system</p>
+              </div>
+              <div class="vol-desc-item">
+                <span class="vol-desc-label">Status</span>
+                <p class="vol-desc-text">Working Prototype</p>
+              </div>
+            </div>
+
+            <div class="vol-proof">
+              <div class="proof-item">
+                <span class="proof-label">Models</span>
+                <span class="proof-value">SVM, Random Forest, KNN</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Output</span>
+                <span class="proof-value">Real-time music control and Prosthetic arm</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Status</span>
+                <span class="proof-value">Working Prototype</span>
+              </div>
+            </div>
+
+
+            <div class="vol-actions">
+              <a href="https://github.com/Armankothariya" class="btn-ghost" target="_blank">GitHub</a>
+              <a href="#archive" class="btn-ghost" style="opacity: 0.5; pointer-events: none;">Demo [TBD]</a>
+            </div>
           </div>
           <div class="vol-card-footer">
             <span class="vol-year">2025</span>
-            <span class="vol-status">IN PROGRESS</span>
+            <span class="vol-status">SYSTEM_ACTIVE</span>
           </div>
         </article>
 
+
         <!-- Volume 02 -->
         <article class="vol-card" id="vol-02">
+          <div class="vol-preview">
+            <img src="assets/projects/ai_preview.png" alt="Multimodal AI Dashboard" />
+          </div>
           <div class="vol-card-inner">
             <div class="vol-head">
               <span class="vol-num">VOLUME 02</span>
               <div class="vol-tags">
                 <span class="vol-tag">AI</span>
-                <span class="vol-tag">MULTIMODAL</span>
+                <span class="vol-tag">RESEARCH</span>
+                <span class="vol-tag">INTERN</span>
               </div>
             </div>
-            <h3 class="vol-title">Multimodal AI Internship</h3>
-            <p class="vol-desc">Engineered multimodal AI systems integrating language and vision. Built robust pipelines
-              for text-to-code and image-to-code generation at the intersection of research and deployment.</p>
-            <ul class="vol-features">
-              <li class="vol-feature">
-                <span class="vol-feature-label">MODULE</span>
-                <span class="vol-feature-name">Text-to-Code Generation</span>
-              </li>
-              <li class="vol-feature">
-                <span class="vol-feature-label">MODULE</span>
-                <span class="vol-feature-name">Image-to-Code Generation</span>
-              </li>
-            </ul>
+            <h3 class="vol-title"> AI Research Intern</h3>
+
+            <div class="vol-desc-group">
+              <div class="vol-desc-item">
+                <span class="vol-desc-label">Description</span>
+                <p class="vol-desc-text">Worked on multimodal AI systems focused on generating code from text and images.
+
+Explored pipelines for converting design inputs into structured frontend components and logic.</p>
+              </div>
+              <div class="vol-desc-item">
+                <span class="vol-desc-label">Technologies</span>
+                <p class="vol-desc-text">Python, PyTorch, HuggingFace, PIL</p>
+              </div>
+              <div class="vol-desc-item">
+                <span class="vol-desc-label">Work Done</span>
+                <p class="vol-desc-text">- Built basic pipelines for text-to-code generation
+- Experimented with image-to-code concepts
+- Contributed to internal development tasks</p>
+              </div>
+              <div class="vol-desc-item">
+                <span class="vol-desc-label">Note</span>
+                <p class="vol-desc-text">Project details are limited due to internal work.</p>
+              </div>
+            </div>
+
+            <div class="vol-proof">
+              <div class="proof-item">
+                <span class="proof-label">Focus</span>
+                <span class="proof-value">AI Research Intern</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Work</span>
+                <span class="proof-value">Text-to-code, Image-to-code</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Access</span>
+                <span class="proof-value">Internal Project</span>
+              </div>
+            </div>
+
+            <div class="vol-actions">
+              <a href="https://github.com/Armankothariya/Codecanva" class="btn-ghost" target="_blank">GitHub</a>
+              <a href="#archive" class="btn-ghost" style="opacity: 0.5; pointer-events: none;">Internal Only</a>
+            </div>
           </div>
           <div class="vol-card-footer">
             <span class="vol-year">2025</span>
             <span class="vol-status">COMPLETED</span>
           </div>
         </article>
+
 
       </div>
     </div>
@@ -357,6 +441,13 @@ same. The content now accurately reflects your work.
         </a>
       </nav>
 
+      <!-- CV Download Button -->
+      <div class="link-cv-container">
+        <a href="./assets/projects/Arman_Resume.pdf" download class="cv-btn contact-cv-btn">
+          Download CV
+        </a>
+      </div>
+
       <footer class="link-footer">
         <p class="link-footer-copy">© 2026 Kothariya Mohamad Arman — obsidian silence</p>
       </footer>
@@ -368,4 +459,3 @@ same. The content now accurately reflects your work.
 </body>
 
 </html>
-```

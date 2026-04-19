@@ -125,6 +125,7 @@
     // Group reveal targets — children stagger in sequence
     const groupSelectors = [
       '.grid.grid--3',   // system cards
+      '.vol-grid',       // project archive
     ];
 
     // Mark individual reveals
