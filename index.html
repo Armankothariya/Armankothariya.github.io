@@ -1,0 +1,371 @@
+You're right — I missed the prosthetic dimension of your BCI work. I've updated the **Volume 01** project description
+and feature list to include **prosthetic control** alongside music synthesis, while keeping everything else exactly the
+same. The content now accurately reflects your work.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="OBSIDIAN SILENCE — Arman's personal portfolio. Systems thinker, architect of ideas." />
+  <title>OBSIDIAN SILENCE — Arman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Orbitron:wght@400;700;900&family=Inter:wght@100;200;300;400;700;800;900&family=Space+Mono:wght@400&family=Syncopate:wght@400;700&family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="custom-cursor">
+    <span class="cursor-coords"></span>
+  </div>
+  <div id="system-grid" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-brand">OBSIDIAN SILENCE</div>
+    <ul class="nav-links">
+      <li><a href="#hero" id="nav-hero">HERO</a></li>
+      <li><a href="#system" id="nav-system">SYSTEM</a></li>
+      <li><a href="#architecture" id="nav-architecture">ARCHITECTURE</a></li>
+      <li><a href="#archive" id="nav-archive">ARCHIVE</a></li>
+      <li><a href="#observatory" id="nav-observatory">OBSERVATORY</a></li>
+      <li><a href="#contact" id="nav-contact">THE LINK</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="section section--hero">
+    <!-- Atmospheric Aura -->
+    <div class="hero-aura" aria-hidden="true"></div>
+    <!-- Digital Horizon Line -->
+    <div class="digital-horizon" aria-hidden="true"></div>
+
+    <div class="container hero-container">
+      <div class="hero-content-stack">
+
+        <!-- Top: Portfolio Label -->
+        <p class="hero-label">PORTFOLIO // v 2.0</p>
+
+        <!-- Center: The Bold Identity -->
+        <div class="hero-brand">
+          <h1 class="hero-name">ARMAN</h1>
+          <div class="hero-polyglot">
+            <span class="polyglot-word">ARMAN</span>
+            <span class="polyglot-word">अरमान</span>
+            <span class="polyglot-word">阿尔曼</span>
+            <span class="polyglot-word">ارمان</span>
+            <span class="polyglot-word">アルマン</span>
+          </div>
+        </div>
+
+        <!-- Decor: Vertical Separator -->
+        <div class="hero-separator"></div>
+
+        <!-- Bottom: The Narrative -->
+        <div class="hero-statement">
+          <blockquote class="hero-quote">
+            <span class="quote-line">"The mind is not a mystery to be feared —</span>
+            <span class="quote-line">but a system to be mapped."</span>
+            <cite>— Arman</cite>
+          </blockquote>
+          <div class="hero-scroll-explore">SCROLL TO EXPLORE ↓</div>
+        </div>
+
+      </div>
+    </div>
+    <img src="silhouette.png" alt="" aria-hidden="true" class="hero-silhouette" id="hero-silhouette" />
+  </section>
+
+  <!-- SYSTEM -->
+  <section id="system" class="section section--system">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-index">01</span>
+        <h2 class="section-title" data-scramble>SYSTEM</h2>
+        <p class="section-subtitle">Architecture of self</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card" id="card-cognition">
+          <div class="card-tag">MODULE_01</div>
+          <h3 class="card-title">Cognition</h3>
+          <p class="card-body">Systems thinking at every layer of decision-making. Pattern recognition over intuition.
+            Logic over impulse.</p>
+        </div>
+        <div class="card" id="card-discipline">
+          <div class="card-tag">MODULE_02</div>
+          <h3 class="card-title">Discipline</h3>
+          <p class="card-body">Consistency as infrastructure. Habits as compiled subroutines. Routines as deployed
+            systems.</p>
+        </div>
+        <div class="card" id="card-architecture">
+          <div class="card-tag">MODULE_03</div>
+          <h3 class="card-title">Architecture</h3>
+          <p class="card-body">Building structures — mental, technical, creative — that hold weight under pressure and
+            scale with intent.</p>
+        </div>
+        <div class="card" id="card-clarity">
+          <div class="card-tag">MODULE_04</div>
+          <h3 class="card-title">Clarity</h3>
+          <p class="card-body">Noise reduction as a core skill. The signal matters; everything else is entropy to be
+            filtered.</p>
+        </div>
+        <div class="card" id="card-execution">
+          <div class="card-tag">MODULE_05</div>
+          <h3 class="card-title">Execution</h3>
+          <p class="card-body">Ideas without output are theoretical. Shipping is a discipline. Completion is the only
+            benchmark that matters.</p>
+        </div>
+        <div class="card" id="card-growth">
+          <div class="card-tag">MODULE_06</div>
+          <h3 class="card-title">Growth</h3>
+          <p class="card-body">Not linear. Not guaranteed. Recursive — each iteration rewrites the base layer, sharpens
+            the edge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEM ARCHITECTURE -->
+  <section id="architecture" class="section section--architecture">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-index">02</span>
+        <h2 class="section-title">SYSTEM ARCHITECTURE</h2>
+        <p class="section-subtitle">Technical profile</p>
+      </div>
+
+      <div class="arch-layout">
+
+        <!-- Left column: Role + Focus -->
+        <div class="arch-col arch-col--identity">
+          <div class="arch-block" id="arch-role">
+            <div class="arch-block-label">ROLE</div>
+            <div class="arch-block-value">B.Tech in Information Technology</div>
+          </div>
+          <div class="arch-block" id="arch-focus">
+            <div class="arch-block-label">FOCUS</div>
+            <ul class="arch-focus-list">
+              <li>Artificial Intelligence</li>
+              <li>Brain-Computer Interfaces</li>
+              <li>Human-Computer Interaction</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right column: Skill stacks -->
+        <div class="arch-col arch-col--skills">
+          <div class="arch-block-label arch-skills-header">SKILLS</div>
+          <div class="arch-stacks">
+
+            <div class="arch-stack" id="arch-stack-logic">
+              <div class="arch-stack-name">Logic</div>
+              <div class="arch-stack-items">
+                <span class="arch-tag">Python</span>
+                <span class="arch-tag">C++</span>
+                <span class="arch-tag">Java</span>
+                <span class="arch-tag">C</span>
+                <span class="arch-tag">Java Script</span>
+              </div>
+            </div>
+
+            <div class="arch-stack" id="arch-stack-systems">
+              <div class="arch-stack-name">Systems</div>
+              <div class="arch-stack-items">
+                <span class="arch-tag">Machine Learning</span>
+                <span class="arch-tag">EEG Signal Processing</span>
+              </div>
+            </div>
+
+            <div class="arch-stack" id="arch-stack-architecture">
+              <div class="arch-stack-name">Architecture</div>
+              <div class="arch-stack-items">
+                <span class="arch-tag">Next.js</span>
+                <span class="arch-tag">Streamlit</span>
+                <span class="arch-tag">Git</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THE ARCHIVE -->
+  <section id="archive" class="section section--archive">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-index">03</span>
+        <h2 class="section-title">THE ARCHIVE</h2>
+        <p class="section-subtitle">Selected work</p>
+      </div>
+
+      <div class="vol-grid">
+
+        <!-- Volume 01 - Updated with prosthetic control -->
+        <article class="vol-card" id="vol-01">
+          <div class="vol-card-inner">
+            <div class="vol-head">
+              <span class="vol-num">VOLUME 01</span>
+              <div class="vol-tags">
+                <span class="vol-tag">BCI</span>
+                <span class="vol-tag">EEG</span>
+                <span class="vol-tag">PROSTHETICS</span>
+              </div>
+            </div>
+            <h3 class="vol-title">Emotion-Aware BCI System</h3>
+            <p class="vol-desc">A brain-computer interface system that decodes emotional states from EEG signals and
+              translates them into dual outputs: real-time prosthetic control and adaptive music synthesis. Bridging
+              neuroscience, assistive technology, and human expression.</p>
+            <ul class="vol-features">
+              <li class="vol-feature">
+                <span class="vol-feature-label">MODULE</span>
+                <span class="vol-feature-name">EEG Emotion Classification</span>
+              </li>
+              <li class="vol-feature">
+                <span class="vol-feature-label">MODULE</span>
+                <span class="vol-feature-name">Music Control Interface</span>
+              </li>
+              <li class="vol-feature">
+                <span class="vol-feature-label">MODULE</span>
+                <span class="vol-feature-name">Prosthetic Arm Control System</span>
+              </li>
+            </ul>
+          </div>
+          <div class="vol-card-footer">
+            <span class="vol-year">2025</span>
+            <span class="vol-status">IN PROGRESS</span>
+          </div>
+        </article>
+
+        <!-- Volume 02 -->
+        <article class="vol-card" id="vol-02">
+          <div class="vol-card-inner">
+            <div class="vol-head">
+              <span class="vol-num">VOLUME 02</span>
+              <div class="vol-tags">
+                <span class="vol-tag">AI</span>
+                <span class="vol-tag">MULTIMODAL</span>
+              </div>
+            </div>
+            <h3 class="vol-title">Multimodal AI Internship</h3>
+            <p class="vol-desc">Engineered multimodal AI systems integrating language and vision. Built robust pipelines
+              for text-to-code and image-to-code generation at the intersection of research and deployment.</p>
+            <ul class="vol-features">
+              <li class="vol-feature">
+                <span class="vol-feature-label">MODULE</span>
+                <span class="vol-feature-name">Text-to-Code Generation</span>
+              </li>
+              <li class="vol-feature">
+                <span class="vol-feature-label">MODULE</span>
+                <span class="vol-feature-name">Image-to-Code Generation</span>
+              </li>
+            </ul>
+          </div>
+          <div class="vol-card-footer">
+            <span class="vol-year">2025</span>
+            <span class="vol-status">COMPLETED</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THE OBSERVATORY -->
+  <section id="observatory" class="section section--observatory">
+
+    <!-- Moving dot canvas — sits behind all content -->
+    <canvas id="obs-canvas" aria-hidden="true"></canvas>
+
+    <div class="container obs-container">
+      <div class="section-header">
+        <span class="section-index">04</span>
+        <h2 class="section-title">THE OBSERVATORY</h2>
+        <p class="section-subtitle">Beyond the screen</p>
+      </div>
+
+      <div class="obs-body">
+
+        <!-- Identity block -->
+        <div class="obs-identity" id="obs-identity">
+          <div class="obs-role-row">
+            <span class="obs-role-label">DESIGNATION</span>
+            <span class="obs-role-value">Citizen Scientist</span>
+          </div>
+          <div class="obs-role-row">
+            <span class="obs-role-label">DOMAIN</span>
+            <span class="obs-role-value">Asteroid Detection</span>
+          </div>
+          <div class="obs-role-row">
+            <span class="obs-role-label">NETWORK</span>
+            <span class="obs-role-value">Minor Planet Center</span>
+          </div>
+        </div>
+
+        <!-- Statement -->
+        <div class="obs-statement" id="obs-statement">
+          <p>
+            Beyond systems and code, the work extends into the unknown.
+          </p>
+          <p>
+            Actively participating in asteroid detection programs — scanning vast datasets, identifying anomalies,
+            contributing to planetary-scale observation.
+          </p>
+          <p>
+            Patterns are universal. Whether in neural signals or distant objects — the task remains: detect, interpret,
+            act.
+          </p>
+          <span class="obs-field-tag">FIELD // PLANETARY DEFENSE · PATTERN ANALYSIS</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THE LINK -->
+  <section id="contact" class="section section--link">
+    <div class="link-inner">
+
+      <div class="link-header">
+        <span class="link-index">05</span>
+        <h2 class="link-title">the link</h2>
+      </div>
+
+      <nav class="link-list" aria-label="Social links">
+        <a href="https://github.com/Armankothariya" target="_blank" rel="noopener" class="link-item" id="link-github">
+          <span class="link-bracket">[</span>
+          <span class="link-name">github</span>
+          <span class="link-bracket">]</span>
+        </a>
+        <a href="#contact" class="link-item" id="link-linkedin" style="opacity: 0.5; pointer-events: none;">
+          <span class="link-bracket">[</span>
+          <span class="link-name">linkedin</span>
+          <span class="link-bracket">]</span>
+        </a>
+        <a href="mailto:arman.kothariya786@gmail.com" class="link-item" id="link-email">
+          <span class="link-bracket">[</span>
+          <span class="link-name">email</span>
+          <span class="link-bracket">]</span>
+        </a>
+      </nav>
+
+      <footer class="link-footer">
+        <p class="link-footer-copy">© 2026 Kothariya Mohamad Arman — obsidian silence</p>
+      </footer>
+
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
+```
